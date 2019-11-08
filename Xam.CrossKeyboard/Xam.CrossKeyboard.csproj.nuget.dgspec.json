@@ -1,0 +1,34 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ilijakocev/Projects/Xam.CrossKeyboard/Xam.CrossKeyboard/Xam.CrossKeyboard.csproj": {}
+  },
+  "projects": {
+    "/Users/ilijakocev/Projects/Xam.CrossKeyboard/Xam.CrossKeyboard/Xam.CrossKeyboard.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ilijakocev/Projects/Xam.CrossKeyboard/Xam.CrossKeyboard/Xam.CrossKeyboard.csproj",
+        "projectName": "Xam.CrossKeyboard",
+        "projectPath": "/Users/ilijakocev/Projects/Xam.CrossKeyboard/Xam.CrossKeyboard/Xam.CrossKeyboard.csproj",
+        "projectJsonPath": "/Users/ilijakocev/Projects/Xam.CrossKeyboard/Xam.CrossKeyboard/project.json",
+        "packagesPath": "/Users/ilijakocev/.nuget/packages/",
+        "projectStyle": "ProjectJson",
+        "configFilePaths": [
+          "/Users/ilijakocev/.config/NuGet/NuGet.Config"
+        ],
+        "sources": {
+          "/Users/ilijakocev/Projects/Xam.CrossKeyboard/Xam.CrossKeyboard.NuGet/bin/Release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        }
+      },
+      "dependencies": {
+        "Microsoft.NETCore.Portable.Compatibility": "[1.0.1, )",
+        "NETStandard.Library": "[2.0.3, )",
+        "NuGet.Build.Packaging": "[0.2.2, )"
+      },
+      "frameworks": {
+        "netstandard1.5": {}
+      }
+    }
+  }
+}

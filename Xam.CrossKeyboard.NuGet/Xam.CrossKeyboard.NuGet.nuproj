@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.5-dev.8\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.5-dev.8\build\NuGet.Build.Packaging.props')" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0053A38A-D64F-4B7C-9513-5BCCC4964450}</ProjectGuid>
+    <Description>Xam.CrossKeyboard enables subscribing to keyboard changes and provides its current height.</Description>
+    <PackageId>Xam.CrossKeyboard</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Ilija Kocev</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Xam.CrossKeyboard.NuGet</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>Xam.CrossKeyboard.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Ilija Kocev</Owners>
+    <Copyright>2019</Copyright>
+    <PackageTags>xamarin, ios, android, keyboard, crosskeyboard, xamarin.forms, xam.crosskeyboard</PackageTags>
+    <Title>Xam.CrossKeyboard</Title>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageProjectUrl>https://github.com/kocevilija/Xam.CrossKeyboard</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/kocevilija/Xam.CrossKeyboard/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://github.com/kocevilija/Xam.CrossKeyboard/blob/master/images/keyboard.ico</PackageIconUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xam.CrossKeyboard\Xam.CrossKeyboard.csproj">
+      <Project>{2BB4947D-DB95-4162-8E4F-AB47FE7B1C26}</Project>
+      <Name>Xam.CrossKeyboard</Name>
+      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
+    </ProjectReference>
+    <ProjectReference Include="..\Xam.CrossKeyboard.Android\Xam.CrossKeyboard.Android.csproj">
+      <Project>{2377E99A-4A58-4CE4-A4B6-040ABCA44DFC}</Project>
+      <Name>Xam.CrossKeyboard.Android</Name>
+      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
+    </ProjectReference>
+    <ProjectReference Include="..\Xam.CrossKeyboard.iOS\Xam.CrossKeyboard.iOS.csproj">
+      <Project>{369AC89A-68AF-42EF-BBE4-BA1C3338CC7B}</Project>
+      <Name>Xam.CrossKeyboard.iOS</Name>
+      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.2</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>
