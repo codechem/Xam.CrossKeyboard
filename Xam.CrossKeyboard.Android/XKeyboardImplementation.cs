@@ -1,12 +1,11 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
 using Android.Content;
 using Android.Graphics;
-using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Views.InputMethods;
 using Android.Widget;
-using System;
 
 namespace Xam.CrossKeyboard
 {
@@ -72,7 +71,7 @@ namespace Xam.CrossKeyboard
         /// </summary>
         public XKeyboardImplementation()
         {
-            _activity = Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity;
+            _activity = (Activity)Xamarin.Forms.Forms.Context;
             _parentView = _activity.Window.FindViewById(Android.Resource.Id.Content);
             _popupWindow = new PopupWindow(_activity)
             {

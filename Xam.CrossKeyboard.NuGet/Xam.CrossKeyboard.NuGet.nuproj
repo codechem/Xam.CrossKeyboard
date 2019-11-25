@@ -6,7 +6,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0053A38A-D64F-4B7C-9513-5BCCC4964450}</ProjectGuid>
-    <Description>Xam.CrossKeyboard enables subscribing to keyboard changes and provides its current height.</Description>
+    <Description>Xam.CrossKeyboard enables subscribing to keyboard changes and provides current visible height of the keyboard.</Description>
     <PackageId>Xam.CrossKeyboard</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Ilija Kocev</Authors>
@@ -19,12 +19,15 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Owners>Ilija Kocev</Owners>
     <Copyright>2019</Copyright>
-    <PackageTags>xamarin, ios, android, keyboard, crosskeyboard, xamarin.forms, xam.crosskeyboard</PackageTags>
+    <PackageTags>xamarin, ios, android, keyboard, crosskeyboard, xamarin.forms, xam.crosskeyboard, xkeyboard</PackageTags>
     <Title>Xam.CrossKeyboard</Title>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageProjectUrl>https://github.com/kocevilija/Xam.CrossKeyboard</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/kocevilija/Xam.CrossKeyboard/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageIconUrl>https://github.com/kocevilija/Xam.CrossKeyboard/blob/master/images/keyboard.ico</PackageIconUrl>
+    <LicenseUrl>https://github.com/kocevilija/Xam.CrossKeyboard/blob/master/LICENSE</LicenseUrl>
+    <IconUrl>https://github.com/kocevilija/Xam.CrossKeyboard/blob/master/art/keyboard.png?raw=true</IconUrl>
+    <ProjectIconUrl>https://github.com/kocevilija/Xam.CrossKeyboard/blob/master/art/keyboard.png?raw=true</ProjectIconUrl>
+    <Summary>Simple cross platform plugin to get keyboard events and keyboard height on crossplatform level.</Summary>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -61,4 +64,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+  <Import Project="..\packages\Xamarin.Android.Support.DrawerLayout.28.0.0.1\build\monoandroid90\Xamarin.Android.Support.DrawerLayout.targets" Condition="Exists('..\packages\Xamarin.Android.Support.DrawerLayout.28.0.0.1\build\monoandroid90\Xamarin.Android.Support.DrawerLayout.targets')" />
 </Project>
