@@ -29,6 +29,7 @@ namespace Xam.CrossKeyboard
         private KeyboardEventTypes _lastState = KeyboardEventTypes.DidHide;
         private PopupWindow _popupWindow;
         private InputMethodManager _inputMethodManager;
+        private event EventHandler<KeyboardStateEventArgs> _keyboardStateChanged;
         private InputMethodManager InputMethodManager
         {
             get
@@ -38,7 +39,6 @@ namespace Xam.CrossKeyboard
                 return _inputMethodManager;
             }
         }
-        private event EventHandler<KeyboardStateEventArgs> _keyboardStateChanged;
 
         /// <summary>
         /// Starts listening for keyboard change events.
