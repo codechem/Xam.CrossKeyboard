@@ -15,7 +15,7 @@ This event sends ```KeyboardStateEventArgs``` as argument, which contains ```Key
 KeyboardEventTypes can be: ```WillShow```, ```DidShow```, ```WillHide```, ```DidHide```.
 
 ## Sample
-```
+``` csharp
 XKeyboard.Current.KeyboardStateChanged += Current_KeyboardStateChanged;
 
 private void Current_KeyboardStateChanged(object sender, KeyboardStateEventArgs e)
@@ -24,7 +24,10 @@ private void Current_KeyboardStateChanged(object sender, KeyboardStateEventArgs 
     KeyboardEventType = e.EventType.ToString();
 }
 ```
-For more detaild sample click [here](https://github.com/kocevilija/Xam.CrossKeyboard/tree/master/Sample)
+
+![](art/Sample.gif)
+
+For more detailed sample click [here](https://github.com/kocevilija/Xam.CrossKeyboard/tree/master/Sample)
 
 ### License
 The MIT License (MIT). See [License File](https://github.com/kocevilija/Xam.CrossKeyboard/blob/master/LICENSE)
