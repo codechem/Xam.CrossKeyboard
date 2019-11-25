@@ -17,7 +17,6 @@
           "/Users/ilijakocev/.config/NuGet/NuGet.Config"
         ],
         "sources": {
-          "/Users/ilijakocev/Projects/Xam.CrossKeyboard/Xam.CrossKeyboard.NuGet/bin/Release": {},
           "https://api.nuget.org/v3/index.json": {}
         }
       },
