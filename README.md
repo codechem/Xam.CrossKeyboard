@@ -1,7 +1,7 @@
 ## Keyboard plugin for Xamarin.Forms
 Simple cross platform plugin to get keyboard events and keyboard height on CrossPlatform level.
 
-NOTE: Restoing package will give warning of using .NETFramework but it will work perfectly fine.
+NOTE: Restoring package will give warning of using .NETFramework but it will work perfectly fine.
 
 ## Nuget
 
