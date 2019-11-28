@@ -33,5 +33,5 @@ For more detailed sample click [here](https://github.com/kocevilija/Xam.CrossKey
 The MIT License (MIT). See [License File](https://github.com/kocevilija/Xam.CrossKeyboard/blob/master/LICENSE)
 
 ## Contributors
-[Ilija Kocev](https://github.com/kocevilija)
-[Costa Halicea](https://github.com/halicea)
+* [Ilija Kocev](https://github.com/kocevilija)
+* [Costa Halicea](https://github.com/halicea)
